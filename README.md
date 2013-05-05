@@ -7,7 +7,8 @@ It includes two main modules:
 1. Client app you can compile for iOS or Android and run from your device
 2. Server module which you "require" in your project main lua which is ran on the Corona Simulator.
 
-Once you add the module to your project add the following line in main.lua
+You will need to add the file "remoteEvents.lua" to your project root path.
+Once you add the module to your project add the following line in "main.lua":
 require( "remoteEvents" )
 
 This will initialize a tcp listener on the simulator end. You will notice a small console window on the upper right corner of the screen.
