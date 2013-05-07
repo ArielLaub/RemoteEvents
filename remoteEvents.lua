@@ -49,8 +49,6 @@ console:setReferencePoint( display.tr )
 console.x, console.y = screenX+screenWidth, screenY
 
 local function startServer()
-	local socket = require("socket")
- 
 	local client = socket.connect("www.google.com",  80)
 	local ip = client:getsockname()
  	local port = 6417
