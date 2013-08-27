@@ -33,7 +33,7 @@ local function newConsole( params )
 		g:insert( line )
 		lines[#lines+1] = line
 		while g.contentHeight > back.contentHeight do
-			lines[1]:removeSelf()
+			if lines[1] then lines[1]:removeSelf() end
 			for i=2, maxLines do
 				lines[i-1] = lines[i]
 				lines[i-1]:translate( 0, - lineHeight )
